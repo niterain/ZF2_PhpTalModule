@@ -5,7 +5,8 @@ This Module is a draft for a PHPTAL integration in ZendFramework.
 Features:
 
 - Uses Zend\View\Resolver to resolve template files. 
-  This allows to keep the template file location configuration from the Zend\View\Renderer\PhpRenderer
+    This allows to keep the template file location 
+    configuration from the Zend\View\Renderer\PhpRenderer
 
 
 
