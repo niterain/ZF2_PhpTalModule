@@ -266,7 +266,11 @@ class PhpTalRenderer implements Renderer, Pluggable
 		$this->__engine->set('headMeta', $this->headMeta());
 		$this->__engine->set('headStyle', $this->headStyle());
 		
-		$this->__engine->set('content', $values->content ?: '');
+		$this->__engine->set('content', '');
+		$values = $values ?: array();
+		
+		foreach($values as $key => $value)
+			$this->__engine->set($key, $value);
 		
 		
 		if ($this->__purgeCacheBeforeRender) {
